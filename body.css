@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(223, 124, 67);
+
+    /* background-image: url(https://media.istockphoto.com/vectors/fast-food-seamless-pattern-with-vector-line-icons-of-hamburger-pizza-vector-id1182393436?k=20&m=1182393436&s=612x612&w=0&h=dBfdRS9u4_maG_64tWyZNNSNZBg6aWcuDEw95Xno8oI=); */
+}
+
+.food{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.image{
+    border: 2px solid rgb(223, 124, 67);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin: 2px -1px 2px -1px;
+    padding: 2px;
+    display: flex;
+        background: rgb(235, 185, 121);
+}
+.write{
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mountains of Christmas', cursive;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.bengali{
+
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+.southindian{
+
+    width: 25%;
+}
+.northindian{
+  
+    width: 25%;
+}
+.chinese{
+
+    width: 25%;
+}
+.mughal{
+ 
+    width: 25%;
+}
+.mexican{
+    
+    width: 25%;
+}
+.italian{
+ 
+    width: 25%;
+}
+.dessert{
+   
+    width: 25%;
+}
+
+
+@media(max-width: 800px){
+    .food{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .image{    
+        display: flex;
+        border: 2px solid rgb(223, 124, 67);
+        margin: 2px -1px 2px -1px;
+        padding: 2px;
+        background: rgb(235, 185, 121);
+    }
+    .write{
+        align-items: center;
+        justify-content: center;
+        font-family: 'Mountains of Christmas', cursive;
+        text-align: center;
+        border: none;
+        color: white;
+        text-decoration: none;
+        font-size:1.5rem;
+    }
+    .bengali{
+        width: 50%;
+        border: none;
+    }
+    .southindian{
+        border: none;
+        width: 50%;
+    }
+    .northindian{
+        border: none;
+        width: 50%;
+    }
+    .chinese{
+        border: none;
+        width: 50%;
+    }
+    .mughal{
+        border: none;
+        width: 50%;
+    }
+    .mexican{
+        border: none;
+        width: 50%;
+    }
+    .italian{
+        border: none;
+        width: 50%;
+    }
+    .dessert{
+        border: none;
+        width: 50%;
+    }
+}
+
+.menu{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Mountains of Christmas', cursive;
+    color: rgb(255, 94, 0);
+
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 0 20px 0;
+    border: 2px solid white;
+    font-size: 2rem;
+
+}

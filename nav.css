@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+body{  
+}
+nav{
+    background: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav .mainMenu li a:hover{
+    background: rgb(255, 94, 0);
+}
+nav .openMenu{
+    font-size: 20px;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .icons a{
+    color: white;
+}
+nav .mainMenu .closeMenu , .icons i{
+     font-size: 20px;
+     padding: 10px;
+     display: none;
+     cursor: pointer;
+}
+.fa-facebook:hover{color:rgb(41, 29, 214);}
+.fa-instagram:hover{color:rgb(211, 49, 189);}
+.fa-twitter:hover{color:rgb(95, 155, 211);}
+.fa-linkedin-in:hover{color:rgb(37, 20, 187);}
+nav .logo{
+    margin: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 5px 5px 20px;
+    font-family: 'Mountains of Christmas', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+  
+}
+nav .search .placeholder{
+    height: 30px;
+    width: 50%%;
+    box-shadow:  0 0 60px rgb(255, 94, 0);
+    border-radius: 10px;
+    border: 0.5px solid rgb(255, 94, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 0 0 10px;
+}
+nav .search .button{
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    background: rgb(255, 94, 0);
+    border-radius: 60px;
+}
+nav .search .button:hover{
+    color: white ;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+    nav .mainMenu{
+        height:50vh;
+        position:fixed;
+        top: 0; bottom: 20%; left: 50%; right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        transition: 10p 1s ease-out;
+        display: none;
+        box-shadow:  0 20px 60px rgb(255, 94, 0);
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    nav .search .placeholder{
+        height: 5vh;
+        width: 18vh;
+    }
+    nav .search .button{
+        height: 4vh;
+        width: 4vh;
+
+    }
+    nav .openMenu{
+        display: block;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    nav .mainMenu li a:hover{
+        background: none;
+        color: rgb(255, 94, 0);
+        font-size: 25px;
+    }
+    .icons i{
+        display: inline-block;
+        padding: 20px 2px;
+    }
+}
